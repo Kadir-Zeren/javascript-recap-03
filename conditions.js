@@ -46,7 +46,8 @@ const calismaSuresi = prompt("Calisma süresi:");
 let maas = prompt("Maasini giriniz:");
 
 if (calismaSuresi >= 10) {
-  maas = maas * 1.1;
+//   maas = Math.trunc(maas * 1.1);
+  maas = Math.round(maas * 1.1);
   console.log("Zamli maasiniz:", maas);
   console.log(`Zamli maasiniz: ${maas}`);
 } else {
