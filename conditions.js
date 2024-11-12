@@ -129,15 +129,15 @@ if (result) {
 
 // **************** TERNARY *******************
 
-const grade1 = prompt("Please enter your grade:");
+// const grade1 = prompt("Please enter your grade:");
 
 // grade1 >= 50 ? console.log("SUCCEED") : console.log("FAILED");
 // const score = grade1 >= 50 ? "PASSED" : "FAILED";
 // console.log(score);
 
 //? tek durumlu kosullandirmada da mecburen else yapisi (: ve sonrasi) kullanılmak zorundadir.
-const score1 = grade1 >= 50 ? "SUCCEED" : "";
-console.log(score1);
+// const score1 = grade1 >= 50 ? "SUCCEED" : "";
+// console.log(score1);
 
 //? Nested ternary yazmak aslinda anlasilabilirligi azaltiyor. Bu sebeple, 2 durum var ise
 //? Ternary kullanmak daha mantiklidir
@@ -159,3 +159,25 @@ if (speed > 120) {
 }
 
 // **************** SHORT CIRCUIT *******************
+
+const age = 19;
+let description = "";
+//? if-else
+// if (age >= 18) {
+//   description = "Adult";
+// }
+
+//? Ternary
+// description = age >= 18 ? "Adult" : "";
+
+//? Short-Circuit
+// description = age >= 18 && "Adult";
+
+age >= 18 && console.log("Adult");
+
+//? Short-Circuit
+// age >= 18 && (description = "Adult");
+
+age < 18 || (description = "Adult")
+
+console.log(description);
