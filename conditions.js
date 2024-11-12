@@ -148,3 +148,14 @@ speed > 120
   : speed >= 90
   ? console.log("Normal")
   : console.log("Low Speed");
+
+//? aynı örneğin if-else ile yapılması
+if (speed > 120) {
+  console.log("Speedy");
+} else if (speed >= 90) {
+  console.log("Normal");
+} else {
+  console.log("Low Speed");
+}
+
+// **************** SHORT CIRCUIT *******************
