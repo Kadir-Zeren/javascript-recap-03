@@ -17,6 +17,7 @@ console.log(Number("0")); //? 0
 console.log(Number(" ")); //? 0
 console.log(Number("")); //? 0
 console.log(Number(null)); //? 0
+console.log(Number(undefined)); //? NaN
 
 const myNumber = "threezeroone"; //? string
 let myNumber2 = Number(myNumber);
@@ -38,5 +39,5 @@ console.log(parseFloat(null));
 console.log(parseFloat("")); //? NaN
 
 //? String
-const myNumber3 = 2000;
+const myNumber3 = 2000.5;
 console.log(String(myNumber3));
